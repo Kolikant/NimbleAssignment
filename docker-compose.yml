@@ -1,0 +1,43 @@
+version: '3.1'
+
+services:
+
+  server1:
+    build: .
+    image: nimbleassignment
+    environment:
+      SERVER_NUM: 1
+    ports:
+      - '3000:3000' 
+
+  server2:
+    build: .
+    image: nimbleassignment
+    environment:
+      SERVER_NUM: 2
+    ports:
+      - '3001:3000' 
+
+  server3:
+    build: .
+    image: nimbleassignment
+    environment:
+      SERVER_NUM: 3
+    ports:
+      - '3002:3000' 
+
+  server4:
+    build: .
+    image: nimbleassignment
+    environment:
+      SERVER_NUM: 4
+    ports:
+      - '3003:3000' 
+
+  server5:
+    build: .
+    image: nimbleassignment
+    environment:
+      SERVER_NUM: 5
+    ports:
+      - '3004:3000'                         
